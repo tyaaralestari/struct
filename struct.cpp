@@ -24,23 +24,25 @@ void inputdata(mahasiswa* ti) {
 int main() {
     mahasiswa tyaa;
 
-    // Pengisian data
-    tyaa.nim = "c030324111";
-    tyaa.nama = "tyaa";
-    tyaa.alamat = "jl cemara raya";
-    tyaa.ipk = 4.0;
+    tyaa.nama= "tyaa";
+    tyaa.nim= "c030324111";
+    tyaa.alamat= "jl.  cemara raya";
+    tyaa.ipk= 4.0;
 
-    // Menampilkan data
-    cout << tyaa.nim << "\n";
-    cout << tyaa.nama << "\n";
-    cout << tyaa.alamat << "\n";
-    cout << tyaa.ipk << "\n";
+    cout << "=== Data Awal ===\n";
+    cout << "Nama   : " << tyaa.nama << "\n";
+    cout << "NIM    : " << tyaa.nim << "\n";
+    cout << "Alamat : " << tyaa.alamat << "\n";
+    cout << "IPK    : " << tyaa.ipk << "\n\n";
 
-    // Input nama dan salam
-    cout << "\nMasukkan nama baru: ";
-    cin >> tyaa.nama;
+    inputdata(&tyaa);
+    cout << "=== Berikut data yang telah anda input ===\n" << endl;
+    cout << "Nama: " << tyaa.nama << "\n";
+    cout << "Nim: " << tyaa.nim << "\n";
+    cout << "alamat: " << tyaa.alamat << "\n";
+    cout << "ipk: " << tyaa.ipk << "\n";
 
-    system("cls"); // hanya akan berfungsi di Windows
+    system("cls"); 
     cout << "Halo " << tyaa.nama << endl;
 
     return 0;
